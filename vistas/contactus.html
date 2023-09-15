@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-lignt">
             <a class="navbar-brand" href="../index.html">
-                <img height="75" src="../imagenes/logo.png" alt="">
+                <img height="75" src="../imagenes/logo.jpeg" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,11 +27,12 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="../index.html">Incio<span class="sr-only">(current)</span></a>
                     </li>
+                    <a class="nav-link" href="./contactus.html">
+                        <img height="45" src="../imagenes/contacto.png" alt="">
+                        Contacto
+                    </a>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contactus.html">Contactos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./signin.html">
+                        <a class="nav-link" href="../vistas/signin.html">
                             <img height="45" src="../imagenes/login.png" alt="">
                             Login
                         </a>
@@ -44,43 +45,120 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="contactus container">
-            <h3>Contactanos</h3>
-            <form action="" method="post">
-                <div class="form-group">
-                    <label for="">Nombre</label>
-                    <input type="text" id="txtNombre" name="txtNombre" class="form-control">
-                </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 pb-5">
 
-                <div class="form-group">
-                    <label for="">Apellido Paterno</label>
-                    <input type="text" id="txtApePat" name="txtApePat" class="form-control">
-                </div>
 
-                <div class="form-group">
-                    <label for="">Apellido Materno</label>
-                    <input type="text" id="txtApeMat" name="txtApeMat" class="form-control">
-                </div>
+                <!--Form with header-->
 
-                <div class="form-group">
-                    <label for="">Correo Electronico</label>
-                    <input type="textEmail" name="txtEmail" class="form-control">
-                </div>
+                <form action="mail.php" method="post">
+                    <div class="card border-primary rounded-0">
+                        <div class="card-header p-0">
+                            <div class="bg-info text-white text-center py-2">
+                                <h3><i class="fa fa-envelope"></i> Contactanos</h3>
+                                <p class="m-0">Con gusto te ayudaremos</p>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
 
-                <div class="form-group">
-                    <label for="">Telefono</label>
-                    <input type="textTelefono" name="txtTelefono" class="form-control">
-                </div>
+                            <!--Body-->
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                        placeholder="Nombre y Apellido" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                    </div>
+                                    <input type="email" class="form-control" id="nombre" name="email"
+                                        placeholder="ejemplo@gmail.com" required>
+                                </div>
+                            </div>
 
-                <div class="form-group">
-                    <label for="">Nombre</label>
-                    <textarea type="text" class="form-control"></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Success</button>
-            </form>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                    </div>
+                                    <textarea class="form-control" placeholder="Envianos tu Mensaje"
+                                        required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <!--Form with header-->
+            </div>
         </div>
-    </main>
+    </div>
+<!--Footwe-->
+<footer class="section footer-classic context-dark bg-image" style="background: #115264;">
+    <div class="container">
+        <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+                <div class="pr-xl-4"><a class="brand" href="../index.html"><img class="brand-logo-light"
+                            src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37"
+                            srcset="../imagenes/logo.jpeg"></a>
+                    <p>Esta es una pagina hecha solo con fines educativos por el momento,
+                        esto es hecho de fan para fan y mi tarea.</p>
+                    <!-- Rights-->
+                    <p class="rights"><span>©  </span><span
+                            class="copyright-year">2023</span><span> </span><span>Waves</span><span>. </span><span>All
+                            Rights Reserved.</span></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Contactos</h5>
+                <dl class="contact-list">
+                    <dt>Direccion:</dt>
+                    <dd>Por ahora solo en el Tecno</dd>
+                </dl>
+                <dl class="contact-list">
+                    <dt>email:</dt>
+                    <dd><a href="mailto:#">tunovelfav@gmail.com</a></dd>
+                </dl>
+                <dl class="contact-list">
+                    <dt>Telefonos:</dt>
+                    <dd><a href="tel:#">461612312312</a> <span>o</span> <a
+                            href="tel:#">4611837450</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+                <h5>Links</h5>
+                <ul class="nav-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="../vistas/contactus.html">Contacts</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters social-container">
+        <div class="col"><a class="social-inner" href="#"><span
+                    class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+        <div class="col"><a class="social-inner" href="#"><span
+                    class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+        <div class="col"><a class="social-inner" href="#"><span
+                    class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+        <div class="col"><a class="social-inner" href="#"><span
+                    class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+    </div>
+</footer>
 </body>
 
 </html>
